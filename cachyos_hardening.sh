@@ -266,7 +266,6 @@ services_to_disable=(
     "avahi-daemon.service"
     "cups.service"
     "cups-browsed.service"
-    "bluetooth.service"
     "ModemManager.service"
     "geoclue.service"
 )
