@@ -1,0 +1,11 @@
+[Unit]
+Description = Run Weekly System Maintenance
+
+[Timer]
+#Run every Sunday at midnight
+OnCalendar = Sun *-*-* 00:00:00
+#if the laptop was off at midnight, run it immediately upon boot-up instead
+Persistent = true
+
+[Install]
+WantedBy = timers.target
