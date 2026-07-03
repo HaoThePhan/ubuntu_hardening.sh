@@ -1,0 +1,11 @@
+[Unit]
+Description = Weekly System Maintenance (APT & Flatpak)
+#Ensures the service won't start if the system is on battery
+ConditionACPower = true
+
+[Service]
+Type = oneshot
+ExecStart = /usr/local/bin/system-maintenance.sh
+
+[Install]
+WantedBy = multi-user.target
